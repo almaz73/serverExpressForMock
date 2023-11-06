@@ -12,19 +12,19 @@ app.use(bodyParser.urlencoded({
 
 app.use(cors());
 
-var books = [{
+var libraries = [{
     id: 0,
     name: 'Vue3'
 }, {
     id: 1,
-    name: 'Vue2'
+    name: 'AngularJs'
 }, {
     id: 2,
-    name: 'VueJs'
+    name: 'React'
 },]
 
-app.get('/books', function (req, res) {
-    res.send(books)
+app.get('/libraries', function (req, res) {
+    res.send(libraries)
 })
 
 var server = app.listen(3000, function () {

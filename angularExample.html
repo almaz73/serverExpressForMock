@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script src="angularExample.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div ng-controller="myCtrl">
+        <div ng-repeat="item in libraries">
+            {{item.name}}
+        </div>
+    </div>
+
+    <di ng-controller="directivaWithoutScope">
+
+    </div>
+    
+</body>
+</html>
